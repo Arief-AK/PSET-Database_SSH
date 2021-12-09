@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ua4M4f/414gYYMAIzJAZkqRorAdHSIb12t6+oC0Hcb+AZqu+pyDbJhpgMstjkB/yIpCiqe3KkUxwIPzAJ/QQ1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\Database_SSH.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Arief\\.nuget\\packages\\mysqlconnector\\2.1.0\\mysqlconnector.2.1.0.nupkg.sha512",
+    "C:\\Users\\Arief\\.nuget\\packages\\ssh.net\\2020.0.1\\ssh.net.2020.0.1.nupkg.sha512",
+    "C:\\Users\\Arief\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\sshnet.security.cryptography.1.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

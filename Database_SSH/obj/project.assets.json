@@ -1,0 +1,215 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "MySqlConnector/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/MySqlConnector.dll": {}
+        }
+      },
+      "SSH.NET/2020.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SshNet.Security.Cryptography": "[1.3.0]"
+        },
+        "compile": {
+          "lib/netstandard2.0/Renci.SshNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Renci.SshNet.dll": {}
+        }
+      },
+      "SshNet.Security.Cryptography/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SshNet.Security.Cryptography.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SshNet.Security.Cryptography.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MySqlConnector/2.1.0": {
+      "sha512": "5iNkOyyFeH3g3ZEh24OgIinoDlDRC6590nz6jxrcczyqLjU8Hxq2remw350CtdecNZOBH/W8zdAXXISAUSOuhA==",
+      "type": "package",
+      "path": "mysqlconnector/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.1.0.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "SSH.NET/2020.0.1": {
+      "sha512": "DhVeQ8JzoS8Z25VwZfQ/9HEjTO8eWs4ldsMkcMsUFK7TFc8GnpxBeRBj3X8mc5+rwvzZNNmLDm08a8TpPZNF/g==",
+      "type": "package",
+      "path": "ssh.net/2020.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Renci.SshNet.dll",
+        "lib/net35/Renci.SshNet.xml",
+        "lib/net40/Renci.SshNet.dll",
+        "lib/net40/Renci.SshNet.xml",
+        "lib/netstandard1.3/Renci.SshNet.dll",
+        "lib/netstandard1.3/Renci.SshNet.xml",
+        "lib/netstandard2.0/Renci.SshNet.dll",
+        "lib/netstandard2.0/Renci.SshNet.xml",
+        "lib/sl4/Renci.SshNet.dll",
+        "lib/sl4/Renci.SshNet.xml",
+        "lib/sl5/Renci.SshNet.dll",
+        "lib/sl5/Renci.SshNet.xml",
+        "lib/uap10/Renci.SshNet.dll",
+        "lib/uap10/Renci.SshNet.xml",
+        "lib/wp71/Renci.SshNet.dll",
+        "lib/wp71/Renci.SshNet.xml",
+        "lib/wp8/Renci.SshNet.dll",
+        "lib/wp8/Renci.SshNet.xml",
+        "ssh.net.2020.0.1.nupkg.sha512",
+        "ssh.net.nuspec"
+      ]
+    },
+    "SshNet.Security.Cryptography/1.3.0": {
+      "sha512": "5pBIXRjcSO/amY8WztpmNOhaaCNHY/B6CcYDI7FSTgqSyo/ZUojlLiKcsl+YGbxQuLX439qIkMfP0PHqxqJi/Q==",
+      "type": "package",
+      "path": "sshnet.security.cryptography/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/SshNet.Security.Cryptography.dll",
+        "lib/net20/SshNet.Security.Cryptography.xml",
+        "lib/net40/SshNet.Security.Cryptography.dll",
+        "lib/net40/SshNet.Security.Cryptography.xml",
+        "lib/net45/SshNet.Security.Cryptography.dll",
+        "lib/net45/SshNet.Security.Cryptography.xml",
+        "lib/netstandard1.0/SshNet.Security.Cryptography.dll",
+        "lib/netstandard1.0/SshNet.Security.Cryptography.xml",
+        "lib/netstandard1.3/SshNet.Security.Cryptography.dll",
+        "lib/netstandard1.3/SshNet.Security.Cryptography.xml",
+        "lib/netstandard2.0/SshNet.Security.Cryptography.dll",
+        "lib/netstandard2.0/SshNet.Security.Cryptography.xml",
+        "lib/portable-net45+win8+wpa81/SshNet.Security.Cryptography.dll",
+        "lib/portable-net45+win8+wpa81/SshNet.Security.Cryptography.xml",
+        "lib/sl4/SshNet.Security.Cryptography.dll",
+        "lib/sl4/SshNet.Security.Cryptography.xml",
+        "lib/sl5/SshNet.Security.Cryptography.dll",
+        "lib/sl5/SshNet.Security.Cryptography.xml",
+        "lib/uap10.0/SshNet.Security.Cryptography.dll",
+        "lib/uap10.0/SshNet.Security.Cryptography.xml",
+        "lib/wp71/SshNet.Security.Cryptography.dll",
+        "lib/wp71/SshNet.Security.Cryptography.xml",
+        "lib/wp8/SshNet.Security.Cryptography.dll",
+        "lib/wp8/SshNet.Security.Cryptography.xml",
+        "sshnet.security.cryptography.1.3.0.nupkg.sha512",
+        "sshnet.security.cryptography.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "MySqlConnector >= 2.1.0",
+      "SSH.NET >= 2020.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Arief\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\Database_SSH.csproj",
+      "projectName": "Database_SSH",
+      "projectPath": "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\Database_SSH.csproj",
+      "packagesPath": "C:\\Users\\Arief\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Arief\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "MySqlConnector": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
+          "SSH.NET": {
+            "target": "Package",
+            "version": "[2020.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
