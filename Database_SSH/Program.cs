@@ -116,14 +116,22 @@ namespace Database_SSH
                 var query = "SELECT"+" * FROM PSET_test_db.PyData ORDER BY idPyData desc limit 3;";
 
                 var list = Select(query, sshClient, connection);
-                
+
                 // list[0] -> id
                 // list[1] -> device name
-                
-                // Added this comment for github commit
-                
-                Console.WriteLine($"\nData: {list}");
+                // list[2] -> temp
+                // list[3] -> light  
+                // list[4] -> preserure
+                // list[5] -> timestap
+                // list[6] -> 
+                // list[
 
+                // Added this comment for github commit
+
+                //Console.WriteLine($"\nData: {list[6]} {list[1]}");
+                parser pars = new parser();
+                pars.parse_sensoor(list);
+                pars.print();
             }
         }
     }

@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\Database_SSH.csproj": {}
+    "C:\\Users\\nianl\\OneDrive\\Documenten\\0Kwartiel_2_j2\\project\\testen_grahf_IF\\PSET-Database_SSH\\Database_SSH\\Database_SSH.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\Database_SSH.csproj": {
+    "C:\\Users\\nianl\\OneDrive\\Documenten\\0Kwartiel_2_j2\\project\\testen_grahf_IF\\PSET-Database_SSH\\Database_SSH\\Database_SSH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\Database_SSH.csproj",
+        "projectUniqueName": "C:\\Users\\nianl\\OneDrive\\Documenten\\0Kwartiel_2_j2\\project\\testen_grahf_IF\\PSET-Database_SSH\\Database_SSH\\Database_SSH.csproj",
         "projectName": "Database_SSH",
-        "projectPath": "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\Database_SSH.csproj",
-        "packagesPath": "C:\\Users\\Arief\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Arief\\RiderProjects\\Database_SSH\\Database_SSH\\obj\\",
+        "projectPath": "C:\\Users\\nianl\\OneDrive\\Documenten\\0Kwartiel_2_j2\\project\\testen_grahf_IF\\PSET-Database_SSH\\Database_SSH\\Database_SSH.csproj",
+        "packagesPath": "C:\\Users\\nianl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nianl\\OneDrive\\Documenten\\0Kwartiel_2_j2\\project\\testen_grahf_IF\\PSET-Database_SSH\\Database_SSH\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Arief\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nianl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -71,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -6,3 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = Database_SSH
+build_property.ProjectDir = C:\Users\nianl\OneDrive\Documenten\0Kwartiel_2_j2\project\testen_grahf_IF\PSET-Database_SSH\Database_SSH\
