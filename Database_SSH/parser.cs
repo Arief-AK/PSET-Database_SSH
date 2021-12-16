@@ -8,43 +8,104 @@ namespace Database_SSH
 {
     class parser
     {
-        int count { get; set; }
-        public void parse_sensoor(List<string> data)
+       private int count { get; set; }
+       public List<sensor_data> sensor_list { get; private set; }
+
+        public void pars(List<string> data)
         {
-            int index = 0;
-            sensor_Datas = new List<sensoor_data>();
+            bool check_py = false;
+            int index = 0; //keep track of py sensor values
+            sensor_list = new List<sensor_data>();
 
             foreach (var n in data)
             {
                 if(count == 0)
                 {
-                    sensoor_data data1 = new sensoor_data();
-                    sensor_Datas.Add(data1);
+                    sensor_data data1 = new sensor_data();                                    
+                        sensor_list.Add(data1);        
                 }
                 switch (count)
                 {
                     case 0:
-                        sensor_Datas[index].senoor_id = int.Parse(n);
+                        try
+                        {
+                            sensor_list[index].senoor_id = int.Parse(n);
+                        }
+                        catch (FormatException)
+                        {
+                            Console.WriteLine($"Unable to parse '{n}'");
+                        }
                         count++;
                     break;
                     case 1:
-                        sensor_Datas[index].name = n;
+                        try
+                        {
+                            sensor_list[index].name = n;
+                            check_py = n.Contains("py");
+                        }
+                        catch (FormatException)
+                        {
+                            Console.WriteLine($"Unable to parse '{n}'");
+                        }
                         count++;
                         break;
                     case 2:
-                        sensor_Datas[index].temp = float.Parse(n);
+                        try
+                        {
+                            sensor_list[index].temp = float.Parse(n);
+                        }
+                        catch (FormatException)
+                        {
+                            Console.WriteLine($"Unable to parse '{n}'");
+                        }
                         count++;
                             break;
                     case 3:
-                        sensor_Datas[index].pressure = float.Parse(n);
+                        if (check_py)
+                        {
+                            try
+                            {
+                                sensor_list[index].pressure = float.Parse(n);
+                            }
+                            catch (FormatException)
+                            {
+                                Console.WriteLine($"Unable to parse '{n}'");
+                            }
+                        }
+                        else
+                        {
+                            try
+                            {
+                                sensor_list[index].humidity = float.Parse(n);
+                            }
+                            catch (FormatException)
+                            {
+                                Console.WriteLine($"Unable to parse '{n}'");
+                            }
+                        }
+                        check_py = false;
                         count++;
                         break;
                     case 4:
-                        sensor_Datas[index].light = int.Parse(n);
+                        try
+                        {
+                            sensor_list[index].light = int.Parse(n);
+                        }
+                        catch (FormatException)
+                        {
+                            Console.WriteLine($"Unable to parse '{n}'");
+                        }
                         count++;
                         break;
                     case 5:
-                        sensor_Datas[index].time = DateTime.Parse( n);
+                        try
+                        {
+                            sensor_list[index].time = DateTime.Parse(n);
+                        }
+                        catch (FormatException)
+                        {
+                            Console.WriteLine($"Unable to parse '{n}'");
+                        }
                         count = 0;
                         index++;
                         break;
@@ -56,9 +117,9 @@ namespace Database_SSH
         }
         public void print()
         {
-            foreach (var i in sensor_Datas)
+            foreach (var i in sensor_list)
             {
-                Console.WriteLine("parsed sensoor data: ");
+                Console.WriteLine("parsed py sensoor data: ");
                 Console.WriteLine(i.name);
                 Console.WriteLine(i.senoor_id);
                 Console.WriteLine(i.temp);
@@ -67,6 +128,6 @@ namespace Database_SSH
                 Console.WriteLine(i.time);
             }
         }
-        List<sensoor_data> sensor_Datas { get; set; }
+    
     }
 }

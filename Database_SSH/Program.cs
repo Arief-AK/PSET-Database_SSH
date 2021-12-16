@@ -113,10 +113,11 @@ namespace Database_SSH
                 Console.WriteLine($"Database name: {connection}");
                 Console.WriteLine($"Connection string: {connection.ConnectionString}");
                 
-                var query = "SELECT"+" * FROM PSET_test_db.PyData ORDER BY idPyData desc limit 3;";
+                var py_query = "SELECT"+" * FROM PSET_test_db.PyData  ORDER BY idPyData desc LIMIT 3";
+                var py_list = Select(py_query, sshClient, connection);
 
-                var list = Select(query, sshClient, connection);
-
+                var lht_query = "SELECT" + " * FROM PSET_test_db.LhtData  ORDER BY idLhtData desc LIMIT 3";
+                var lht_list = Select(lht_query, sshClient, connection);
                 // list[0] -> id
                 // list[1] -> device name
                 // list[2] -> temp
@@ -129,10 +130,17 @@ namespace Database_SSH
                 // Added this comment for github commit
 
                 //Console.WriteLine($"\nData: {list[6]} {list[1]}");
-                parser pars = new parser();
-                pars.parse_sensoor(list);
-                pars.print();
+                parser py_pars = new parser();
+                py_pars.pars(py_list);
+                py_pars.print();
+
+                Console.WriteLine( py_pars.sensor_list);
+
+                parser lht_pars = new parser();
+                py_pars.pars(lht_list);
+                py_pars.print();
             }
+        
         }
     }
 }
