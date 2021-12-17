@@ -115,17 +115,18 @@ namespace Database_SSH
                 }
             }
         }
-        public void print()
+        public void print()//just to show if we have the data does need to be delete after final sprint 
         {
             foreach (var i in sensor_list)
             {
-                Console.WriteLine("parsed py sensoor data: ");
-                Console.WriteLine(i.name);
-                Console.WriteLine(i.senoor_id);
-                Console.WriteLine(i.temp);
-                Console.WriteLine(i.pressure);
-                Console.WriteLine(i.light);
-                Console.WriteLine(i.time);
+                Console.WriteLine($"parsed {i.name} sensoor data: ");
+                Console.WriteLine($" senor id: {i.senoor_id}");
+                Console.WriteLine($" name: {i.name}");
+                Console.WriteLine($" temp: {i.temp}");
+                Console.WriteLine($" light: {i.light}");
+                Console.WriteLine($" pressure: {i.pressure}");
+                Console.WriteLine($" humidity: {i.humidity}");
+                Console.WriteLine($" time: {i.time}");
             }
         }
     
