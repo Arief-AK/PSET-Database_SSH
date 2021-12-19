@@ -3,17 +3,12 @@ using MySqlConnector;
 using Renci.SshNet;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Database_SSH
 {
- public class Connect_databases
+ public static class DatabaseConnection
     {
-     public static SshClient  client1 { get; set; }
-
-        public static (SshClient SshClient, uint Port) ConnectSsh(string sshHostName, string sshUserName,
+        private static (SshClient SshClient, uint Port) ConnectSsh(string sshHostName, string sshUserName,
          string sshPassword = null, string sshKeyFile = null, string sshPassPhrase = null, int sshPort = 22,
          string databaseServer = "192.168.68.108", int databasePort = 8455)
         {
@@ -52,8 +47,9 @@ namespace Database_SSH
             return (sshClient, forwardedPort.BoundPort);
 
         }
+        
         //Select statement
-        public static List<string> Select(string queryString, SshClient client, MySqlConnection connection)
+        private static List<string> Select(string queryString, SshClient client, MySqlConnection connection)
         {
             string query = queryString;
 
@@ -86,10 +82,9 @@ namespace Database_SSH
             }
             return list;
         }
-        public Pair<List<string>, List<string>> connect()
+        
+        public static Pair<List<string>, List<string>> Connect()
         {
-            Console.WriteLine("Hello World!");
-            //Pair<List<string>, List<string>> all_sensors = new Pair<List<string>, List<string>>();
             var server = "82.75.86.150";
             var sshUserName = "pi";
             var sshPassword = "SaxionTest";
@@ -116,17 +111,21 @@ namespace Database_SSH
 
                 Console.WriteLine($"\nDatabase connection status: {connection.State}");
                 Console.WriteLine($"Database name: {connection}");
-                Console.WriteLine($"Connection string: {connection.ConnectionString}");
+                Console.WriteLine($"Connection string: {connection.ConnectionString}\n");
+                
                 //here queries can be made
                 var py_query = "SELECT" + " * FROM PSET_test_db.PyData  ORDER BY idPyData desc LIMIT 3";
                 var py_list = Select(py_query, sshClient, connection);
+                
                 var lht_query = "SELECT" + " * FROM PSET_test_db.LhtData  ORDER BY idLhtData desc LIMIT 3";
                 var lht_list = Select(lht_query, sshClient, connection);
-              // all_sensors(py_list, lht_list);
-                Pair<List<string>, List<string>> all_sensors = new Pair<List<string>, List<string>>(py_list, lht_list);
+                
+                // all_sensors(py_list, lht_list);
+                var unparsed_sensors = new Pair<List<string>, List<string>>(py_list, lht_list);
 
-                return all_sensors;//retrun a list of types of sensons
+                //return a list of types of sensors
+                return unparsed_sensors;
             }
-             } 
+        } 
     }
 }

@@ -39,3 +39,4 @@ C:\Users\nianl\OneDrive\Documenten\0Kwartiel_2_j2\project\testen_grahf_IF\PSET-D
 C:\Users\nianl\OneDrive\Documenten\0Kwartiel_2_j2\project\testen_grahf_IF\PSET-Database_SSH\Database_SSH\obj\Debug\net5.0\Database_SSH.genruntimeconfig.cache
 C:\Users\nianl\OneDrive\Documenten\0Kwartiel_2_j2\project\testen_grahf_IF\PSET-Database_SSH\Database_SSH\bin\Debug\net5.0\Castle.Core.dll
 C:\Users\nianl\OneDrive\Documenten\0Kwartiel_2_j2\project\testen_grahf_IF\PSET-Database_SSH\Database_SSH\obj\Debug\net5.0\Database_SSH.csproj.CopyComplete
+C:\Users\Arief\RiderProjects\Database_SSH\Database_SSH\bin\Debug\net5.0\Castle.Core.dll
